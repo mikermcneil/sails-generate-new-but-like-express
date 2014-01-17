@@ -1,0 +1,35 @@
+{
+  "name": "sails-generate-new",
+  "version": "0.10.0",
+  "description": "Generate a new for Sails.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "new",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "sails": {
+  	"generator": {
+	 		"name": "new",
+	 		"behavior": "overrides `sails generate new`",
+	 		"sailsVersion": "~0.10.0",
+	 		"main": "lib/index"
+  	}
+  }
+}
