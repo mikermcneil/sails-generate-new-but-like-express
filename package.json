@@ -26,10 +26,9 @@
   },
   "sails": {
   	"generator": {
-	 		"name": "new",
-	 		"behavior": "overrides `sails generate new`",
-	 		"sailsVersion": "~0.10.0",
-	 		"main": "lib/index"
+ 		"type": "new",
+ 		"behavior": "overrides `sails generate new`",
+ 		"sailsVersion": "~0.10.0"
   	}
   }
 }
