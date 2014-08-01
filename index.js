@@ -10,7 +10,7 @@ var _ = require('lodash');
  * sails-generate-new-but-like-express
  *
  * Usage:
- * `sails generate new foo --but-like-express`
+ * `nodeg new foo --like express`
  *
  * @type {Object}
  */
