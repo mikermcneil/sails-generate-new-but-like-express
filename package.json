@@ -2,7 +2,7 @@
   "name": "sails-generate-new-but-like-express",
   "version": "0.10.0",
   "description": "Generate a new for Sails.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
