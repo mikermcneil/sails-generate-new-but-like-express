@@ -1,8 +1,16 @@
 /**
+ * Module dependencies
+ */
+
+var _ = require('lodash');
+
+
+
+/**
  * sails-generate-new-but-like-express
  *
  * Usage:
- * `sails new foo --but-like-express`
+ * `sails generate new foo --but-like-express`
  *
  * @type {Object}
  */
@@ -11,7 +19,9 @@ module.exports = {
 
   targets: {
 
+    './:appPath/app.js': { copy: 'app.js' },
     './:appPath/public/javascripts': { folder: {} },
+    './:appPath/public/javascripts/sails.io.js': { copy: 'public/javascripts/sails.io.js' },
     './:appPath/public/stylesheets': { folder: {} },
     './:appPath/public/images': { folder: {} },
     './:appPath/routes': { folder: {} },
@@ -20,7 +30,6 @@ module.exports = {
     './:appPath/views': { folder: {} },
     './:appPath/views/index.jade': { template: 'views/index.jade' },
     './:appPath/views/layout.jade': { template: 'views/layout.jade' },
-    './:appPath/app.js': { copy: 'app.js' },
     './:appPath/package.json': { jsonfile: function (scope) {
       return {
         name: scope.appName,
