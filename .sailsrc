@@ -2,7 +2,7 @@
 
 	"generators": {
 		"modules": {
-			"new":"sails-generate-new-express"
+			"new": "./lib/"
 		}
 	}
 }
